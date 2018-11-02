@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Padrão de telas -->
+    <style name="ScreenBase">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/bg_solid_light_blue</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/BorderLeftRight</item>
+        <item name="android:paddingRight">@dimen/BorderLeftRight</item>
+        <item name="android:paddingTop">@dimen/BorderTopDown</item>
+        <item name="android:paddingBottom">@dimen/BorderTopDown</item>
+    </style>
+    
+    <!-- Padrões de Fontes -->
+    <style name="FontBase">
+        <item name="android:textColor">@color/Preto</item>
+        <item name="android:textSize">@dimen/TextSize</item>
+    </style>
+
+    <style name="FontBaseBold" parent="@style/FontBase">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FontBaseItalic" parent="@style/FontBase">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="FontBaseBoldItalic" parent="@style/FontBase">
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+      
+    <!-- Padrões de Botões -->
+    <style name="ButtonBase">
+    	<item name="android:layout_height">@dimen/ButtonHeight</item>
+    	<item name="android:gravity">center</item>
+    	<item name="android:layout_marginBottom">@dimen/SpaceAfterButton</item>
+    	<item name="android:textStyle">bold</item>
+    	<item name="android:textSize">@dimen/TextButtonSize</item>
+    	<item name="android:textColor">@color/Branco</item>
+    </style>
+    
+    <style name="MenuButtonBase" parent="@style/ButtonBase">
+    	<item name="android:layout_height">@dimen/MenuButtonHeight</item>
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:background">@drawable/button_menu</item>
+    	<item name="android:gravity">left|center_vertical</item>
+    	<item name="android:drawableRight">@drawable/ic_next</item>
+    	<item name="android:textColor">@color/Preto</item>
+    </style>
+
+    <!-- Padrões de Row -->
+    <style name="RowBase">
+    	<item name="android:layout_width">fill_parent</item>
+  	</style>
+
+    <style name="FieldRowBase" parent="@style/RowBase">
+    	<item name="android:background">@drawable/rounded_button_menu</item>
+		<item name="android:layout_height">@dimen/FieldHeight</item>
+    	<item name="android:paddingLeft">@dimen/SpaceLateralDefault</item>
+    	<item name="android:paddingRight">@dimen/SpaceLateralDefault</item>
+    	<item name="android:layout_marginBottom">@dimen/SpaceAfterField</item>    	
+  	</style>
+  	
+    <!-- Padrões de Row de Tabela -->
+    <style name="TableRowBase" parent="@style/RowBase">
+    	<item name="android:paddingLeft">@dimen/BorderLeftRight</item>
+    	<item name="android:paddingRight">@dimen/BorderLeftRight</item>
+  	</style>
+  	
+    <style name="TableRowLightBlue" parent="@style/TableRowBase">
+    	<item name="android:background">@color/AzulClaro</item>
+  	</style>
+  	
+    <style name="TableRowLightBlueLastLine" parent="@style/TableRowBase">
+    	<item name="android:background">@drawable/table_row_last_line_light_blue</item>
+  	</style>
+    
+    <style name="TableRowWhiteOpacity" parent="@style/TableRowBase">
+    	<item name="android:background">@color/BrancoOpaco</item>
+  	</style>
+  	
+    <style name="TableRowWhiteOpacityLastLine" parent="@style/TableRowBase">
+    	<item name="android:background">@drawable/table_row_last_line_white_opacity</item>
+  	</style>
+  	
+    <style name="TableRowWhite" parent="@style/TableRowBase">
+    	<item name="android:background">@color/Branco</item>
+  	</style>
+
+    <style name="TableRowWhiteLastLine" parent="@style/TableRowBase">
+    	<item name="android:background">@drawable/table_row_last_line_white</item>
+  	</style>
+  	    
+    <style name="TableTitleRowWhite" parent="@style/TableRowBase">
+    	<item name="android:background">@drawable/table_row_title</item>
+  	</style>
+    	
+    <!-- Padrões de Labels -->
+    <style name="FieldLabelBase">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">@dimen/FieldHeight</item>
+    	<item name="android:textStyle">bold</item>
+    	<item name="android:textSize">@dimen/TextFieldSize</item>
+    	<item name="android:textColor">@color/Preto</item>
+    </style>
+
+    <!-- Padrões de Campos (edit texts) -->
+    <style name="FieldBase">
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">@dimen/FieldHeight</item>
+    	<item name="android:textSize">@dimen/TextFieldSize</item>
+    	<item name="android:textColor">@color/Preto</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<string name="setting_title_type_taxation">Tipo de Tributação</string>  
+	<string name="setting_summary_type_taxation">Selecione o tipo de tributação</string>
+	
+	<string name="setting_title_percentage_irpj">Percentual de IRPJ</string>  
+	<string name="setting_summary_percentage_irpj">Selecione o %% de IRPJ</string>
+	
+	<string name="setting_title_percentage_iss">Percentual de ISS</string>
+	<string name="setting_summary_percentage_iss">Selecione o %% de ISS</string>
+</resources>

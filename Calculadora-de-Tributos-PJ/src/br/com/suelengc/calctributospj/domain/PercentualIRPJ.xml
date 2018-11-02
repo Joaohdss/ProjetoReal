@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testful:class xmlns:testful="http://testful.sourceforge.net/schema/2.0/testful.xsd">
+    <cluster>
+        <class>java.lang.Class</class>
+        <class>java.lang.Enum</class>
+        <class>java.lang.String</class>
+    </cluster>
+    <method name="compareTo" maxExecTime="500" exposeState="false" kind="mutator">
+        <parameter type="java.lang.Enum" mutated="true" captured="true" exposedByReturn="false" exchangeStateWith=""/>
+    </method>
+    <method name="equals" maxExecTime="500" exposeState="false" kind="pure">
+        <parameter type="java.lang.Object" mutated="true" captured="true" exposedByReturn="false" exchangeStateWith=""/>
+    </method>
+    <method name="getDeclaringClass" maxExecTime="500" exposeState="false" kind="pure"/>
+    <method name="hashCode" maxExecTime="500" exposeState="false" kind="observer"/>
+    <method name="name" maxExecTime="500" exposeState="false" kind="mutator"/>
+    <method name="ordinal" maxExecTime="500" exposeState="false" kind="mutator"/>
+    <method name="toString" maxExecTime="500" exposeState="false" kind="observer"/>
+    <method name="valueOf" maxExecTime="500" exposeState="false" kind="static">
+        <parameter type="java.lang.Class" mutated="true" captured="true" exposedByReturn="true" exchangeStateWith=""/>
+        <parameter type="java.lang.String" mutated="true" captured="true" exposedByReturn="true" exchangeStateWith=""/>
+    </method>
+    <method name="valueOf" maxExecTime="500" exposeState="false" kind="static">
+        <parameter type="java.lang.String" mutated="true" captured="true" exposedByReturn="true" exchangeStateWith=""/>
+    </method>
+    <method name="values" maxExecTime="500" exposeState="true" kind="static"/>
+</testful:class>
